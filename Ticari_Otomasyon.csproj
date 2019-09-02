@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70227A36-81CF-4504-A3DE-30897099FE5B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ticari_Otomasyon</RootNamespace>
+    <AssemblyName>Ticari_Otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v18.1.Win, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1.UI, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.UI, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Presets, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Win, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DboTicariOtomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DboTicariOtomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DboTicariOtomasyonDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DboTicariOtomasyonDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DboTicariOtomasyonDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DboTicariOtomasyonDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DboTicariOtomasyonDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DboTicariOtomasyonDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin.Designer.cs">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaSayfa.Designer.cs">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAyarlar.Designer.cs">
+      <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFaturaUrunDuzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFaturaUrunDuzenleme.Designer.cs">
+      <DependentUpon>FrmFaturaUrunDuzenleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaModul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaModul.Designer.cs">
+      <DependentUpon>FrmAnaModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBankalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBankalar.Designer.cs">
+      <DependentUpon>FrmBankalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFaturalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFaturalar.Designer.cs">
+      <DependentUpon>FrmFaturalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFaturaUrunDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFaturaUrunDetay.Designer.cs">
+      <DependentUpon>FrmFaturaUrunDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFirmalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFirmalar.Designer.cs">
+      <DependentUpon>FrmFirmalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiderler.Designer.cs">
+      <DependentUpon>FrmGiderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHareketler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHareketler.Designer.cs">
+      <DependentUpon>FrmHareketler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKasa.Designer.cs">
+      <DependentUpon>FrmKasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMail.Designer.cs">
+      <DependentUpon>FrmMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriler.Designer.cs">
+      <DependentUpon>FrmMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotDetay.Designer.cs">
+      <DependentUpon>FrmNotDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotlar.Designer.cs">
+      <DependentUpon>FrmNotlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersoneller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersoneller.Designer.cs">
+      <DependentUpon>FrmPersoneller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRaporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRaporlar.Designer.cs">
+      <DependentUpon>FrmRaporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRehber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRehber.Designer.cs">
+      <DependentUpon>FrmRehber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStoklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoklar.Designer.cs">
+      <DependentUpon>FrmStoklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUrunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUrunler.Designer.cs">
+      <DependentUpon>FrmUrunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnaSayfa.resx">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAyarlar.resx">
+      <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFaturaUrunDuzenleme.resx">
+      <DependentUpon>FrmFaturaUrunDuzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnaModul.resx">
+      <DependentUpon>FrmAnaModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBankalar.resx">
+      <DependentUpon>FrmBankalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFaturalar.resx">
+      <DependentUpon>FrmFaturalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFaturaUrunDetay.resx">
+      <DependentUpon>FrmFaturaUrunDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFirmalar.resx">
+      <DependentUpon>FrmFirmalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiderler.resx">
+      <DependentUpon>FrmGiderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHareketler.resx">
+      <DependentUpon>FrmHareketler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKasa.resx">
+      <DependentUpon>FrmKasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMail.resx">
+      <DependentUpon>FrmMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriler.resx">
+      <DependentUpon>FrmMusteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotDetay.resx">
+      <DependentUpon>FrmNotDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotlar.resx">
+      <DependentUpon>FrmNotlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersoneller.resx">
+      <DependentUpon>FrmPersoneller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRaporlar.resx">
+      <DependentUpon>FrmRaporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRehber.resx">
+      <DependentUpon>FrmRehber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoklar.resx">
+      <DependentUpon>FrmStoklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUrunler.resx">
+      <DependentUpon>FrmUrunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FirmalarRapor.rdlc" />
+    <EmbeddedResource Include="MusterilerRapor.rdlc" />
+    <EmbeddedResource Include="GiderlerRapor.rdlc" />
+    <EmbeddedResource Include="PersonellerRapor.rdlc" />
+    <None Include="DboTicariOtomasyonDataSet.xsc">
+      <DependentUpon>DboTicariOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DboTicariOtomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet.xss">
+      <DependentUpon>DboTicariOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet1.xsc">
+      <DependentUpon>DboTicariOtomasyonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DboTicariOtomasyonDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet1.xss">
+      <DependentUpon>DboTicariOtomasyonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet2.xsc">
+      <DependentUpon>DboTicariOtomasyonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DboTicariOtomasyonDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet2.xss">
+      <DependentUpon>DboTicariOtomasyonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet3.xsc">
+      <DependentUpon>DboTicariOtomasyonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DboTicariOtomasyonDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DboTicariOtomasyonDataSet3.xss">
+      <DependentUpon>DboTicariOtomasyonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
