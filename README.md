@@ -23,3 +23,4 @@
 ![20](https://user-images.githubusercontent.com/39102004/64053861-f7841800-cb8c-11e9-939b-4451c5d0806a.PNG)
 
 
+Sipariş Modülü eklenecektir.
